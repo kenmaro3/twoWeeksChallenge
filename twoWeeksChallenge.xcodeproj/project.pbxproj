@@ -15,6 +15,8 @@
 		0A46B2EA2886608D00A9A695 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46B2E92886608D00A9A695 /* LoginPage.swift */; };
 		0A46B2EC2886648200A9A695 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46B2EB2886648200A9A695 /* LoginViewModel.swift */; };
 		0A46B2EE28866FFA00A9A695 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46B2ED28866FFA00A9A695 /* Home.swift */; };
+		0A46B2F128867C1F00A9A695 /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46B2F028867C1F00A9A695 /* KeyChainHelper.swift */; };
+		0A46B2F32886801600A9A695 /* KeyChainPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46B2F22886801600A9A695 /* KeyChainPropertyWrapper.swift */; };
 		C42FC8CEBE62C2DE73B24E61 /* Pods_twoWeeksChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B75219D4BC06D5221673F0 /* Pods_twoWeeksChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		0A46B2E92886608D00A9A695 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		0A46B2EB2886648200A9A695 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0A46B2ED28866FFA00A9A695 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		0A46B2F028867C1F00A9A695 /* KeyChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
+		0A46B2F22886801600A9A695 /* KeyChainPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainPropertyWrapper.swift; sourceTree = "<group>"; };
 		64B75219D4BC06D5221673F0 /* Pods_twoWeeksChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twoWeeksChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4EBE1C6832C97AB51F321F /* Pods-twoWeeksChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twoWeeksChallenge.release.xcconfig"; path = "Target Support Files/Pods-twoWeeksChallenge/Pods-twoWeeksChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		EAF57F83B5500EEA6D89149F /* Pods-twoWeeksChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twoWeeksChallenge.debug.xcconfig"; path = "Target Support Files/Pods-twoWeeksChallenge/Pods-twoWeeksChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		0A46B2D428865B7700A9A695 /* twoWeeksChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0A46B2EF28867C0F00A9A695 /* Helper */,
 				0A46B2E82886607800A9A695 /* View */,
 				0A46B2E72886607100A9A695 /* ViewModel */,
 				0A46B2E528865FA200A9A695 /* GoogleService-Info.plist */,
@@ -100,6 +105,15 @@
 				0A46B2ED28866FFA00A9A695 /* Home.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0A46B2EF28867C0F00A9A695 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0A46B2F028867C1F00A9A695 /* KeyChainHelper.swift */,
+				0A46B2F22886801600A9A695 /* KeyChainPropertyWrapper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		2BF5882BF84AF6BD37AD2990 /* Frameworks */ = {
@@ -237,7 +251,9 @@
 				0A46B2EC2886648200A9A695 /* LoginViewModel.swift in Sources */,
 				0A46B2D828865B7700A9A695 /* ContentView.swift in Sources */,
 				0A46B2EE28866FFA00A9A695 /* Home.swift in Sources */,
+				0A46B2F128867C1F00A9A695 /* KeyChainHelper.swift in Sources */,
 				0A46B2EA2886608D00A9A695 /* LoginPage.swift in Sources */,
+				0A46B2F32886801600A9A695 /* KeyChainPropertyWrapper.swift in Sources */,
 				0A46B2D628865B7700A9A695 /* twoWeeksChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

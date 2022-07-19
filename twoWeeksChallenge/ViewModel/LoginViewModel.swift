@@ -15,8 +15,9 @@ class LoginViewModel: ObservableObject {
     
     // MARK: FaceID Properties
     @AppStorage("use_face_id") var useFaceID: Bool = false
-    @AppStorage("use_face_email") var faceIDEmail: String = ""
-    @AppStorage("use_face_password") var faceIDPassword: String = ""
+    // MARK: Keychain Properties
+    @KeyChain(key: "use_face_email", account: "FaceIDLogin") var storedEmail
+    @KeyChain(key: "use_face_password", account: "FaceIDLogin") var storedPassword
     
     // MARK: Log Status
     @AppStorage("log_status") var logStatus: Bool = false
@@ -31,10 +32,14 @@ class LoginViewModel: ObservableObject {
         
         DispatchQueue.main.async {
             // Storing Once
-            if useFaceID && self.faceIDEmail == ""{
+            if useFaceID && self.storedEmail == nil{
                 self.useFaceID = useFaceID
-                self.faceIDEmail = self.email
-                self.faceIDPassword = self.password
+                
+                // Setting Data is simple as @AppStorage
+                let emailData = self.email.data(using: .utf8)
+                let passwordData = self.password.data(using: .utf8)
+                self.storedEmail = emailData
+                self.storedPassword = passwordData
             }
             
             self.logStatus = true
@@ -51,10 +56,10 @@ class LoginViewModel: ObservableObject {
     // MARK: FaceID Login
     func authenticateUser()async throws{
         let status = try await LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "To Login Into App")
-        if status{
-            try await loginUser(useFaceID: useFaceID, email: self.faceIDEmail, password: self.faceIDPassword)
-        }
         
+        if let emailData = storedEmail, let passwordData = storedPassword, status{
+            try await loginUser(useFaceID: useFaceID, email: String(data: emailData, encoding: .utf8) ?? "", password: String(data: passwordData, encoding: .utf8) ?? "")
+        }
     }
     
     

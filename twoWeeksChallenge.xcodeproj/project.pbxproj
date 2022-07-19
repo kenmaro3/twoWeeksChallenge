@@ -11,6 +11,11 @@
 		0A46B2D828865B7700A9A695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46B2D728865B7700A9A695 /* ContentView.swift */; };
 		0A46B2DA28865B7C00A9A695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A46B2D928865B7C00A9A695 /* Assets.xcassets */; };
 		0A46B2DD28865B7C00A9A695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A46B2DC28865B7C00A9A695 /* Preview Assets.xcassets */; };
+		0A46B2E628865FA300A9A695 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A46B2E528865FA200A9A695 /* GoogleService-Info.plist */; };
+		0A46B2EA2886608D00A9A695 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46B2E92886608D00A9A695 /* LoginPage.swift */; };
+		0A46B2EC2886648200A9A695 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46B2EB2886648200A9A695 /* LoginViewModel.swift */; };
+		0A46B2EE28866FFA00A9A695 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46B2ED28866FFA00A9A695 /* Home.swift */; };
+		C42FC8CEBE62C2DE73B24E61 /* Pods_twoWeeksChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B75219D4BC06D5221673F0 /* Pods_twoWeeksChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,13 @@
 		0A46B2D728865B7700A9A695 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A46B2D928865B7C00A9A695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A46B2DC28865B7C00A9A695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A46B2E528865FA200A9A695 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A46B2E92886608D00A9A695 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		0A46B2EB2886648200A9A695 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0A46B2ED28866FFA00A9A695 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		64B75219D4BC06D5221673F0 /* Pods_twoWeeksChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twoWeeksChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4EBE1C6832C97AB51F321F /* Pods-twoWeeksChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twoWeeksChallenge.release.xcconfig"; path = "Target Support Files/Pods-twoWeeksChallenge/Pods-twoWeeksChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		EAF57F83B5500EEA6D89149F /* Pods-twoWeeksChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twoWeeksChallenge.debug.xcconfig"; path = "Target Support Files/Pods-twoWeeksChallenge/Pods-twoWeeksChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42FC8CEBE62C2DE73B24E61 /* Pods_twoWeeksChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +50,8 @@
 			children = (
 				0A46B2D428865B7700A9A695 /* twoWeeksChallenge */,
 				0A46B2D328865B7700A9A695 /* Products */,
+				A46158C9BCC2AF5ABDCA2F50 /* Pods */,
+				2BF5882BF84AF6BD37AD2990 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +66,9 @@
 		0A46B2D428865B7700A9A695 /* twoWeeksChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0A46B2E82886607800A9A695 /* View */,
+				0A46B2E72886607100A9A695 /* ViewModel */,
+				0A46B2E528865FA200A9A695 /* GoogleService-Info.plist */,
 				0A46B2D528865B7700A9A695 /* twoWeeksChallengeApp.swift */,
 				0A46B2D728865B7700A9A695 /* ContentView.swift */,
 				0A46B2D928865B7C00A9A695 /* Assets.xcassets */,
@@ -67,6 +85,40 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0A46B2E72886607100A9A695 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A46B2EB2886648200A9A695 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A46B2E82886607800A9A695 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A46B2E92886608D00A9A695 /* LoginPage.swift */,
+				0A46B2ED28866FFA00A9A695 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BF5882BF84AF6BD37AD2990 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64B75219D4BC06D5221673F0 /* Pods_twoWeeksChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A46158C9BCC2AF5ABDCA2F50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAF57F83B5500EEA6D89149F /* Pods-twoWeeksChallenge.debug.xcconfig */,
+				AB4EBE1C6832C97AB51F321F /* Pods-twoWeeksChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A46B2E028865B7C00A9A695 /* Build configuration list for PBXNativeTarget "twoWeeksChallenge" */;
 			buildPhases = (
+				378C025394420384E6A16620 /* [CP] Check Pods Manifest.lock */,
 				0A46B2CE28865B7700A9A695 /* Sources */,
 				0A46B2CF28865B7700A9A695 /* Frameworks */,
 				0A46B2D028865B7700A9A695 /* Resources */,
+				F2A1ED6D464E319F099D0B17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A46B2E628865FA300A9A695 /* GoogleService-Info.plist in Resources */,
 				0A46B2DD28865B7C00A9A695 /* Preview Assets.xcassets in Resources */,
 				0A46B2DA28865B7C00A9A695 /* Assets.xcassets in Resources */,
 			);
@@ -132,12 +187,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		378C025394420384E6A16620 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-twoWeeksChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A1ED6D464E319F099D0B17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-twoWeeksChallenge/Pods-twoWeeksChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-twoWeeksChallenge/Pods-twoWeeksChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-twoWeeksChallenge/Pods-twoWeeksChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A46B2CE28865B7700A9A695 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A46B2EC2886648200A9A695 /* LoginViewModel.swift in Sources */,
 				0A46B2D828865B7700A9A695 /* ContentView.swift in Sources */,
+				0A46B2EE28866FFA00A9A695 /* Home.swift in Sources */,
+				0A46B2EA2886608D00A9A695 /* LoginPage.swift in Sources */,
 				0A46B2D628865B7700A9A695 /* twoWeeksChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +361,7 @@
 		};
 		0A46B2E128865B7C00A9A695 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF57F83B5500EEA6D89149F /* Pods-twoWeeksChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -270,6 +371,7 @@
 				DEVELOPMENT_TEAM = B4C7245FA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,6 +392,7 @@
 		};
 		0A46B2E228865B7C00A9A695 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB4EBE1C6832C97AB51F321F /* Pods-twoWeeksChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +402,7 @@
 				DEVELOPMENT_TEAM = B4C7245FA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
